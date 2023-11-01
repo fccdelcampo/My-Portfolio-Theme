@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with JohnDoe landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Elementary Graduation</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + JohnDoe main styles -->
+	<link rel="stylesheet" type="text/css" href="assets/css/johndoe.css">
+    <style>
+        .btn {
+            position: relative;
+            animation: moveLeftRight 3s infinite;
+        }
+    
+        @keyframes moveLeftRight {
+            0%, 100% {
+                transform: translateX(0); /* No horizontal movement */
+            }
+            50% {
+                transform: translateX(20px); /* Move to the right */
+            }
+        }
+    
+        /* Define the keyframes for the swoosh effect */
+        .hover-header {
+            animation: hoverEffect 2s ease-out;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            position: relative;
+            left: -100px; /* Initial x position */
+        }
+    
+        @keyframes hoverEffect {
+            0% {
+                opacity: 0;
+                left: -100px; /* Starting x position */
+            }
+            100% {
+                opacity: 1;
+                left: 0; /* Final x position */
+            }
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <div class="blog-card">
+        <div class="img-holder">
+            <img src="assets/imgs/elementary.jpg">
+        </div>
+        <div class="content-holder">
+            <h6 class="title">Elementary Diploma</h6>
+
+            <p class="post-details">
+                <a href="#">By: Francis Carlo Del Campo</a>
+                <a href="#"><i class="ti-heart text-danger"></i> 0</a>
+                <a href="#"><i class="ti-comment"></i> 0</a>
+            </p>
+            
+            <p><b>On May 26, 2016, I graduated from Elementary. I also received a Bronze Medal in recognition of my academic achievements. </b></p>
+        </div>
+    </div>
+    <p>            
+        <button class="btn btn-primary btn-rounded" id="scrollButton">
+            <a href="index.html#portfolio">
+                <i class="ti-arrow-left"></i>
+            </a>
+        </button>
+        &#160 &#160 Back to the Portfolio.
+    </p><!-- end of blog wrapper -->
+</body>

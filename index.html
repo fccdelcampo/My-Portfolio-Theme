@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>My Portfolio</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + JohnDoe main styles -->
+	<link rel="stylesheet" type="text/css" href="assets/css/johndoe.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .btn {
+            position: relative;
+            animation: moveUpDown 3s infinite;
+        }
+
+        @keyframes moveUpDown {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        } 
+        /* Define the keyframes for the swoosh effect */
+        .hover-header {
+            animation: hoverEffect 2s ease-out;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            position: relative;
+            top: -100px; /* Initial y position */
+        }
+
+        @keyframes hoverEffect {
+            0% {
+                opacity: 0;
+                top: -100px; /* Starting y position */
+            }
+            100% {
+                opacity: 1;
+                top: 0; /* Final y position */
+            }
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link text-light" href="https://www.facebook.com/opmacledolracsicnarf" target="_blank"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://twitter.com/Kiks07152004" target="_blank"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/fccdelcampo" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+            </ul>  
+            <div class="header-content">
+
+                <h4 class="header-subtitle hover-header" >Hello, I am</h4> <br>
+                <h1 class="header-title hover-header">Francis Carlo Del Campo</h1> <br>
+                <div class="text-container">
+                    <pre id="encoded-text" class="encoded-text">I am a</pre>
+                </div>
+                <script src="script.js"></script>
+
+                <style>
+                    /* Centering the button horizontally and vertically */
+                    p {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      height: 10vh;
+                      margin: 0;
+                    }
+                  </style>
+
+            <p>
+                <button class="btn btn-primary btn-rounded" id="scrollButton">
+                    <a href="#about">
+                        <i class="ti-arrow-down"></i>
+                    </a>
+                </button>
+            </p>
+            
+            </div>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<section>
+
+    <div class="container-fluid">
+        <div id="about" class="row about-section">
+            <div class="col-lg-4 about-card">
+                <br><br>
+                <h3>Who am I ?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">An Aspiring Computer Science major</h5><br>
+                <p class="mt-20"><br><br><br>Hello! I'm Francis, currently studying Bachelor of Science in Computer Science in the University of the Cordilleras. My special interests include programming, artificial intelligence, quantum computing, and the Internet-of-Things (IoT). After graduation, my plan is to get internships at tech-focused companies here in the Philippines to build my portfolio first. Then, I'll seek employment at a corporation that offers growth opportunities.</p>
+                <br><br><br><br>
+                    <ul class="mt40 info list-unstyled">
+                        <li><span>EDUCATIONAL ATTAINMENT:</span></li>
+                        <li><span>* STEM Graduate, 2023</span> - Saint Louis University - Basic Education School - Senior High, Graduated with Honors, Loyalty Awardee</li>
+                        <li><span>* Junior High School Completer</span> - Saint Louis University - Laboratory Junior High School, Graduated with Distinction</li>
+                        <li><span>* Elementary Graduate</span> - Saint Louis University - Laboratory Elementary School, Honor Pupil</li>
+                    </ul>
+                  <br>
+                <h3>Contact Information</h3>
+                <span class="line mb-5"></span>
+                <ul class="mt40 info list-unstyled">
+                    <li><span>Birthdate</span> : 07/15/2004</li>
+                    <li><span>Institutional Email</span> : fcd2765@students.uc-bcf.edu.ph</li>
+                    <li><span>Personal Email</span> : delcampocarlo8@gmail.com </li>
+                    <li><span>Phone</span> : + (63) 939-345-7137</li>
+                    <li><span>Address</span> :  266-A Lower West Purok 2, Camp 7, Baguio City</li>
+                </ul>
+                <ul class="social-icons pt-3">
+                    <li class="social-item"><a class="social-link" href="https://www.facebook.com/opmacledolracsicnarf" target="_blank"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://twitter.com/Kiks07152004" target="_blank"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/fccdelcampo" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 about-card">
+                <br><br>
+                <h3>My Photo</h3>
+                <span class="line mb-5"></span>
+                <img src="assets/imgs/wholebodypic.jpg" class="img-thumbnail fade-in">
+            </div>
+            <div class="col-lg-4 about-card">
+                <br><br>
+            <h3>My Skills</h3>
+                <span class="line mb-5"></span>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <div class="text-container">
+                            <pre id="encoded-text" class="encoded-text-1">C Programming</pre>
+                        </div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>45%</h6>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <div class="text-container">
+                            <pre id="encoded-text" class="encoded-text-1">HTML, CSS, and JavaScript Web Development</pre>
+                        </div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>20%</h6>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <div class="text-container">
+                            <pre id="encoded-text" class="encoded-text-1">Java Programming</pre>
+                        </div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>30%</h6>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <div class="text-container">
+                            <pre id="encoded-text" class="encoded-text-1">Python Programming</pre>
+                        </div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>30%</h6>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <div class="text-container">
+                            <pre id="encoded-text" class="encoded-text-1">Computing Fundamentals</pre>
+                        </div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>75%</h6>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $(window).scroll(function() {
+      $('.img-thumbnail').each(function() {
+        var top_of_element = $(this).offset().top;
+        var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+        var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+
+        if (bottom_of_screen > top_of_element) {
+          $(this).css('opacity', '1');
+          $(this).css('transform', 'translateY(0)');
+        }
+      });
+    });
+  });
+</script>
+    <script>
+        
+        document.getElementById("scrollButton").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            slowScrollTo("#about", 1000); // Adjust the speed by changing the duration (1000 milliseconds = 1 second)
+        });
+
+        function slowScrollTo(target, duration) {
+            const targetElement = document.querySelector(target);
+            if (!targetElement) {
+                return;
+            }
+            const targetPosition = targetElement.getBoundingClientRect().top;
+            const startPosition = window.pageYOffset;
+            const startTime = performance.now();
+            const easeOutQuad = (t, b, c, d) => c * (1 - (t = 1 - t / d) * t) + b;
+
+            function scroll() {
+                const currentTime = performance.now() - startTime;
+                const newPosition = easeOutQuad(currentTime, startPosition, targetPosition, duration);
+                window.scrollTo(0, newPosition);
+                if (currentTime < duration) {
+                    requestAnimationFrame(scroll);
+                }
+            }
+
+            requestAnimationFrame(scroll);
+        }
+    </script>
+    </section>
+    <!-- Portfolio Section -->
+    <section class="section bg-custom-gray" id="portfolio">
+        <div class="container">
+            <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
+            <div class="portfolio">
+                <div class="filters">
+                    <a href="#" data-filter=".new" style="color: white;">
+                        1
+                    </a>
+                    <a href="#" data-filter=".advertising" style="color: white;">
+                        2
+                    </a>
+                    <a href="#" data-filter=".branding" style="color: white;">
+                        3
+                    </a>
+                    <a href="#" data-filter=".web" style="color: white;">
+                        4
+                    </a>
+                </div>
+                <div class="portfolio-container"> 
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/research.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <div class="text-holder">
+                                    <h6 class="title">Successful Research Presentation and Defense</h6>
+                                    <a class="img-popup" href="research.html"><p class="subtitle">Read more!</p></a>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/immersion.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <div class="text-holder">
+                                    <h6 class="title">Recognition Of Immersion STEM Advocacy Organizations</h6>
+                                    <a class="img-popup" href="immersion.html"><p class="subtitle">Read more!</p></a>
+                                </div>
+                            </div> 
+                        </div>                         
+                    </div>
+                    <div class="col-md-6 col-lg-4 advertising new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/elementary.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
+                            <div class="content-holder">
+                                <div class="text-holder">
+                                    <h6 class="title">Elementary Diploma</h6>
+                                    <a class="img-popup" href="elementary.html"><p class="subtitle">Read more!</p></a>
+                                </div>
+                            </div>    
+                        </div>              
+                    </div> 
+                    <div class="col-md-6 col-lg-4 web">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/faculty.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <div class="text-holder">
+                                    <h6 class="title">Selfie and Handshake with Mr. Jhunfel Dela Cruz</h6>
+                                    <a class="img-popup" href="faculty.html"><p class="subtitle">Read more!</p></a>
+                                </div>
+                            </div>
+                        </div>                                                     
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 advertising"> 
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/seniorhighschool.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
+                            <div class="content-holder">
+                                <div class="text-holder">
+                                    <h6 class="title">STEM Graduate</h6>
+                                    <a class="img-popup" href="seniorhighschool.html"><p class="subtitle">Read more!</p></a>
+                                </div>
+                            </div>
+                        </div>                                                       
+                    </div> 
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/researchcongress.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                           <div class="content-holder">
+                                <div class="text-holder">
+                                    <h6 class="title">Senior High School Research Congress Of The University Of Saint Louis</h6>
+                                    <a class="img-popup" href="researchcongress.html"><p class="subtitle">Read more!</p></a>
+                                </div>
+                            </div>
+                        </div>                                                     
+                    </div>
+                    <div class="col-md-6 col-lg-4 advertising new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/juniorhighschool.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
+                           <div class="content-holder">
+                                <div class="text-holder">
+                                    <h6 class="title">Junior High School Completer</h6>
+                                    <a class="img-popup" href="juniorhighschool.html"><p class="subtitle">Read more!</p></a>
+                                </div>
+                            </div>
+                        </div>                                                       
+                    </div> 
+                    <div class="col-md-6 col-lg-4 advertising new"> 
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/kinder.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
+                            <div class="content-holder">
+                                <div class="text-holder">
+                                    <h6 class="title">Kinder Graduation</h6>
+                                    <a class="img-popup" href="primary.html"><p class="subtitle">Read more!</p></a>
+                                </div>
+                            </div>
+                        </div>
+                                
+                    </div> 
+                    <div class="col-md-6 col-lg-4 branding new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/codecademy.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
+                            <div class="content-holder">
+                                <div class="text-holder">
+                                    <h6 class="title">Certificate Of Completion From Codecademy</h6>
+                                    <a class="img-popup" href="codecademy.html"><p class="subtitle">Read more!</p></a>
+                                </div>
+                            </div> 
+                        </div>
+                    </div> 
+                    <div class="col-md-6 col-lg-4 branding">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/picwithdad.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                            <div class="content-holder">
+                                <div class="text-holder">
+                                    <h6 class="title">Picture with my Dad</h6>
+                                    <a class="img-popup" href="dad.html"><p class="subtitle">Read more!</p></a>
+                                </div>
+                            </div>
+                        </div>                                                     
+                    </div> 
+                    <div class="col-md-6 col-lg-4 branding">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/picwithmom.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                      
+                            <div class="content-holder"> 
+                                <div class="text-holder">
+                                    <h6 class="title">Picture with my Mom</h6>
+                                    <a class="img-popup" href="mom.html"><p class="subtitle">Read more!</p></a>
+                                </div>
+                            </div>
+                        </div>                                                      
+                    </div> 
+                    
+                </div> 
+            </div>  
+        </div>            
+    </section>
+    <!-- End of portfolio section -->
+
+    <div class="section contact" id="contact">
+        <div id="map" class="map"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="contact-form-card">
+                        <h4 class="contact-title">Send a message</h4>
+                        <form action="">
+                            <div class="form-group">
+                                <input  class="form-control" type="text" placeholder="Name *" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="email" placeholder="Email *" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id=" placeholder="Message *" rows="7" required></textarea>
+                            </div>
+                            <div class="form-group ">
+                                <button type="submit" class="form-control btn btn-primary" >Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info-card">
+                        <h4 class="contact-title">Get in touch</h4>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-mobile icon-md"></i>
+                            </div>
+                            <div class="col-10 ">
+                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (63) 939-345-7137</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-map-alt icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Address :<br> <span class="text-muted"> 266-A Lower West Purok 2, Camp 7, Baguio City</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-envelope icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Institutional Email :<br> <span class="text-muted">fcd2765@students.uc-bcf.edu.ph</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-envelope icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Personal Email :<br> <span class="text-muted">delcampocarlo8@gmail.com</span></h6>
+                            </div>
+                        </div>
+                        <ul class="social-icons pt-4">
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.facebook.com/opmacledolracsicnarf" target="_blank"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://twitter.com/Kiks07152004" target="_blank"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://github.com/fccdelcampo" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+
+            </p>
+        </div>
+    </footer>
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+
+</body>
+</html>
