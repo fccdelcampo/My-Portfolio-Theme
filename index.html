@@ -15,6 +15,10 @@
             animation: moveUpDown 3s infinite;
         }
 
+        .btn-1 {
+            position: relative;
+        }
+
         @keyframes moveUpDown {
             0%, 100% {
                 transform: translateY(0);
@@ -257,7 +261,6 @@
                 <h3 class="scroll-animate scroll-right">Contact Information</h3>
                 <span class="line mb-5 scroll-animate scroll-right"></span>
                 <ul class="mt40 info list-unstyled">
-                    <li><span>Birthdate</span> : 07/15/2004</li>
                     <li><span>Institutional Email</span> : fcd2765@students.uc-bcf.edu.ph</li>
                     <li><span>Personal Email</span> : delcampocarlo8@gmail.com </li>
                     <li><span>Phone</span> : + (63) 939-345-7137</li>
@@ -272,7 +275,17 @@
             <div class="col-lg-4 about-card">
                 <br><br>
                 <h2 class="scroll-animate scroll-down">Francis Carlo Del Campo</h3>
-                <img src="assets/imgs/wholebodypic.jpg" class="img-thumbnail glowing-image">
+                    <div style="text-align: center;">
+                        <img src="assets/imgs/wholebodypic.jpg" class="img-thumbnail glowing-image" style="height: 700px; margin: 0 auto; display: block;">
+                      </div>
+                      
+                <p>
+                    <button class="btn btn-primary btn-rounded" id="scrollButton">
+                        <a href="#portfolio">
+                            <img src="assets/imgs/mousebutton.gif" style="width: 30px; height: 40px;"></i>
+                        </a>
+                    </button>
+                </p>
             </div>
             <div class="col-lg-4 about-card scroll-animate">
                 <br><br>
@@ -555,8 +568,14 @@ $(document).ready(function () {
                             </div>
                         </div>                                                      
                     </div> 
-                    
                 </div> 
+                <p>
+                    <button class="btn btn-primary btn-rounded" id="scrollButton">
+                        <a href="#contact">
+                            <img src="assets/imgs/mousebutton.gif" style="width: 30px; height: 40px;"></i>
+                        </a>
+                    </button>
+                </p>
             </div>  
         </div>            
     </section>
@@ -581,7 +600,7 @@ $(document).ready(function () {
                                 <textarea class="form-control" id=" placeholder="Message *" rows="7" required></textarea>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control btn btn-primary" >Send Message</button>
+                                <button type="submit" class="form-control btn-1 btn-primary" >Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -628,6 +647,14 @@ $(document).ready(function () {
                         </ul> 
                     </div>
                 </div>
+                <p></p>
+                <p style="margin: 0 auto;">
+                    <button class="btn btn-primary btn-rounded" id="scrollButton">
+                        <a href="#home">
+                            <img src="assets/imgs/flippedmousebutton.gif" style="width: 30px; height: 40px;"></i>
+                        </a>
+                    </button>
+                </p>
             </div>
 
         </div>
