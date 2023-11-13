@@ -25,7 +25,7 @@
         } 
         /* Define the keyframes for the swoosh effect */
         .hover-Down {
-            animation: hoverEffectDown 3s ease-in-out;
+            animation: hoverEffectDown 2s ease-in-out;
             animation-fill-mode: forwards;
             opacity: 0;
             position: relative;
@@ -33,7 +33,7 @@
         }
 
         .hover-Up {
-            animation: hoverEffectUp 3s ease-in-out;
+            animation: hoverEffectUp 2s ease-in-out;
             animation-fill-mode: forwards;
             opacity: 0;
             position: relative;
@@ -64,7 +64,7 @@
 
         /* Hover-left Transition */
         .hover-Left {
-            animation: hoverEffectLeft 2s ease-in-out;
+            animation: hoverEffectLeft 3s ease-in-out;
             animation-fill-mode: forwards;
             opacity: 0;
             position: relative;
@@ -84,7 +84,15 @@
 
         /* Hover-right Transition */
         .hover-Right {
-            animation: hoverEffectRight 1s ease-in-out;
+            animation: hoverEffectRight 2s ease-in-out;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            position: relative;
+            left: -100px; /* Initial x position */
+        }
+
+        .hover-Right-1 {
+            animation: hoverEffectRight 3s ease-in-out;
             animation-fill-mode: forwards;
             opacity: 0;
             position: relative;
@@ -174,8 +182,8 @@
             <div class="header-content">
 
                 <h4 class="header-subtitle hover-Down" >Hello, I am</h4> <br>
-                <h1 class="header-title hover-Down">Francis Carlo Del Campo</h1> <br>
-                <div class="text-container hover-Right">
+                <h1 class="header-title hover-Right">Francis Carlo Del Campo</h1> <br>
+                <div class="text-container hover-Right-1">
                     <pre id="encoded-text" class="encoded-text">I am a</pre>
                 </div>
                 <script src="script.js"></script>
@@ -194,7 +202,7 @@
             <p>
                 <button class="btn btn-primary btn-rounded" id="scrollButton">
                     <a href="#about">
-                        <i class="ti-arrow-down"></i>
+                        <img src="assets/imgs/mousebutton.gif" style="width: 30px; height: 40px;"></i>
                     </a>
                 </button>
             </p>
@@ -234,8 +242,8 @@
                 <br><br>
                 <h3 class="scroll-animate scroll-right">Who am I ?</h3>
                 <span class="line mb-5 scroll-animate scroll-right"></span>
-                <div class="text-container scroll-animate scroll-left">
-                    <pre id="encoded-text" class="encoded-text-1 scroll-animate scroll-left">An Aspiring Computer Science Major</pre>
+                <div class="text-container scroll-animate scroll-right">
+                    <pre id="encoded-text" class="encoded-text-1 scroll-animate scroll-right">An Aspiring Computer Science Major</pre>
                 </div>
                 <p class="mt-20"><br><br><br>Hello! I'm Francis, currently studying Bachelor of Science in Computer Science in the University of the Cordilleras. My special interests include programming, artificial intelligence, quantum computing, and the Internet-of-Things (IoT). After graduation, my plan is to get internships at tech-focused companies here in the Philippines to build my portfolio first. Then, I'll seek employment at a corporation that offers growth opportunities.</p>
                 <br><br><br><br>
